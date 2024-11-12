@@ -32,3 +32,10 @@ Using tf-idf vectorizer and logistic regression to build a multi-class classifie
 ## Text Summarization
 - Used a tf-idf vectorizer over the sentences of the text, and used their mean values for each sentence as a score to find sentences in decreasing order of importance. Then, a threshlod or count can be used to get sentences with best scores.
 - **TextRank**: Implemented TextRank Summarizer from scratch. In this approach, the scores of each sentence is computed in a different way. We consider a Markov model, with states as the sentences, and transitions are between sentences with cosine similarities. Then the limiting distribution of the states is found, by computing eigenvector of the similarity matrix, which serve as the desired scores.
+
+## Topic Modeling
+- **Latent Dirichlet Allocation (LDA)** : Used LDA to train on a text corpus and thus modeled them into a given number of topics. LDA is an unsupervised learning algorithm and hence the interpretation of these topics are up to us.
+-**Non-negative Matrix Factorization (NFA)**: Used NFA to reduce the dimensionality of the text corpus, effectively performing topic modeling.
+
+## Feed Forward ANNs
+Used fead-forward artificial neural networks for text classification
